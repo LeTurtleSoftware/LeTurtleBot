@@ -6,8 +6,7 @@ import requests
 import os
 
 
-#token = os.environ['TOKEN']
-token = "NjQ5ODAxMTYxNjMyOTA3Mjk0.XeCF8g.VCqmwFO5hHNTYhQIuaCOlaU0yf8" 
+token = os.environ['TOKEN']
 client = discord.Client()
 
 
@@ -34,7 +33,7 @@ async def on_message(message):
 
     # prints a helpful message
     if message.content.startswith('!pls help'):  # make sure to update this with new commands as they are added
-        await client.send_message(message.channel,
+        await message.channel.send(message.channel,
         '```' +
         '!pls help : Prints this help message\n'
         '!pls ping : Ping me and I will pong you back!\n'
