@@ -4,9 +4,13 @@ import logging
 import random
 import requests
 import os
+import sys
 
-
-token = os.environ['TOKEN']
+try:
+    token = os.environ['TOKEN']
+except KeyError as Key:
+    print("Local Execution")
+    token = sys.argv[1]
 client = discord.Client()
 
 
