@@ -7,9 +7,6 @@ import os
 import sys
 import time
 import os
-
-
-import os
 import psycopg2
 
 try:
