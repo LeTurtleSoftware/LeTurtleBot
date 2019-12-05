@@ -1,3 +1,3 @@
 # LeTurtleBot
 
-Let count some Traps Addicts (Daniela)
+non politically correct bot to do some weird stuff (Daniela)
