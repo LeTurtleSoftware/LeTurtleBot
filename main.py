@@ -206,7 +206,7 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, 'you do not have permission to do that')
 
-    # self explanatory
+    # self explanatory 
     if message.content.lower().startswith(('!pls whoisagoodbot', '!pls whoisthebestbot')):
         await client.send_message(message.channel, 'I am!')
 
